@@ -24,7 +24,8 @@ export default createGlobalStyle`
     scroll-behavior: smooth;
   }
   body {
-    background: ${props => props.theme.background};
+    /* background: ${props => props.theme.background}; */
+    background-color: #F7F7F8;
     font: 400 1rem 'Montserrat', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -43,7 +44,7 @@ export default createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
-  main {
+  .main__div {
     max-width: 1900px;
     width: 100%;
     margin: 0 auto;
@@ -54,9 +55,13 @@ export default createGlobalStyle`
     overflow-y: hidden;
   }
 
-  #home {
-    width: 100%;
-    margin: 0 auto;
+  .separator {
+    background-color: ${({theme}) => theme.primary};
+    width: 35%;
+    height: 6px;
+    position: absolute;
+    top: -10rem;
+    left: -14.5rem;
   }
 
   .slide img {

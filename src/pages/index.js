@@ -1,9 +1,11 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import Header from '@/components/Header'
-import HomeHero from '@/components/HomeHero'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from 'next/head';
+import Header from '@/components/Header';
+import HomeHero from '@/components/HomeHero';
+import SectionTwo from '@/components/SectionTwo';
+import SectionThree from '@/components/SectionThree';
+import SectionFour from '@/components/SectionFour';
+import About from '@/components/About';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -17,8 +19,12 @@ export default function Home() {
       <Header />
       <main>
         <HomeHero />
-        <h1>Hello World</h1>
+        <SectionTwo />
+        <SectionThree />
+        <SectionFour />
+        <About />
       </main>
+      <Footer />
     </>
   )
 }
