@@ -2,11 +2,14 @@ import { darken } from "polished";
 import styled from "styled-components";
 
 export const HeroContainer = styled.section`
-    max-width: 1400px;
+    max-width: 1150px;
     width: 100%;
-    margin-right: auto;
+    margin-left: 7rem;
+    margin-bottom: 21rem;
+    /* margin-right: auto; */
+    /* margin: 0 auto 21rem; */
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
 
     .hero_bg {
@@ -22,8 +25,9 @@ export const HeroContainer = styled.section`
     }
     .hero__img {
         width: 535px;
-        height: 750px;
+        height: 685px;
         display: block;
+        position: relative;
     }
     .hero__txt {
         max-width: 500px;
@@ -40,6 +44,7 @@ export const HeroContainer = styled.section`
         p {
             color: ${({theme}) => theme.greysecond};
             font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
             line-height: 1.5;
             text-align: justify;
             margin-bottom: 2rem;
@@ -59,7 +64,7 @@ export const HeroContainer = styled.section`
             transition: all 100ms ease-in;
             
             &:hover {
-                background-color: ${({theme}) => darken(0.1, theme.primary)};
+                background-color: ${({theme}) => darken(0.1, theme.grey)};
             }
         }
     }
