@@ -59,9 +59,11 @@ export default createGlobalStyle`
     background-color: ${({theme}) => theme.primary};
     width: 35%;
     height: 6px;
+    display: block;
+    
     position: absolute;
-    top: -10rem;
-    left: -14.5rem;
+    /* top: -10rem; */
+    left: 0;
   }
 
   .slide img {
@@ -161,5 +163,21 @@ export default createGlobalStyle`
   }
   .slick-dots {
     display: none !important;
+  }
+
+  //HERO
+  .home__hero {
+    .hero_bg {
+      background-color: ${({theme}) => theme.primary};
+      width: 100%;
+      height: 73px;
+      display: block;
+      /* margin-bottom: 3.62rem; */
+    }
+  }
+  .aboutDiv {
+    .navMenu {
+      margin: 2rem auto;
+    }
   }
 `;

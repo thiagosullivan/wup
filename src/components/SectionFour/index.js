@@ -1,10 +1,19 @@
 import React from 'react';
 import { SectionFourContainer } from './styles';
+import NavigationMenu from '../NavigationMenu';
 
 function SectionFour() {
   return (
-    <SectionFourContainer>
+    <SectionFourContainer id="sobre-a-wup">
       <div className='separator'></div>
+      <NavigationMenu
+        btnOne="Sobre a WUP"
+        btnOneLink="#sobre-a-wup"
+        btnTwo="Sobre a Marta"
+        btnTwoLink="#sobre-a-marta"
+        btnThree="Nossos estudos"
+        btnThreeLink="#nossos-estudos"
+      />
       <div className='sec4__title'>
         <h2>Temos alguns propósitos…</h2>
         <p>Nós buscamos inspirar e despertar pessoas, incentivando-as a viver experiências novas e desafiadoras. Para isso, acreditamos que o autoconhecimento é fundamental para desenvolver o autogerenciamento e identificar pontos fortes, possibilitando a superação de bloqueios emocionais e culturais e o alcance de melhores resultados.</p>
@@ -29,9 +38,10 @@ function SectionFour() {
         <ul className='sec4__txt'>
           <li>- Soluções personalizadas para empresas familiares.</li>
           <li>- Definição de papéis, planos de sucessão e preparação de líderes.</li>
-          <li>- Definição de missão, visão e valores e criação de uma cultura organizacional saudável</li>
+          <li>- Definição de missão, visão e valores e criação de uma cultura organizacional saudável.</li>
           <li>- Capacitação de liderança e treinamento para equipes, desenvolvendo habilidades de comunicação, planejamento estratégico, gestão de conflitos e resolução de problemas.</li>
           <li>- Planos personalizados de capacitação para as equipes, identificando pontos fortes e áreas de melhoria e desenvolvendo habilidades e competências para melhorar os resultados.</li>
+          <li>- Soluções personalizadas para a gestão de RH, incluindo treinamentos e capacitação para os profissionais, desenvolvimento de políticas e processos, e estratégias de motivação e engajamento das equipes.</li>
         </ul>
         <div className='sec4__square'>
           <span>O que<br/>
@@ -40,6 +50,7 @@ function SectionFour() {
             pela sua<br/>
             empresa</span>
         </div>
+        <div className='separator'></div>
       </div>
     </SectionFourContainer>
   )

@@ -1,14 +1,13 @@
 import { darken } from "polished";
 import styled from "styled-components";
 
-export const SecondThreeContainer = styled.section`
-    max-width: 1480px;
+export const SectionThreeContainer = styled.section`
+    max-width: 1036px;
     width: 100%;
-    margin-left: 14rem;
-    margin-bottom: 18rem;
+    margin: 0 auto;
+    padding: 3.5rem 3.81rem;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
     position: relative;
 
     .separator {
@@ -16,59 +15,68 @@ export const SecondThreeContainer = styled.section`
     }
 
     .sec3__img {
-        width: 760px;
-        height: 890px;
+        width: 480px;
+        height: 570px;
         display: block;
-        margin-left: 4rem;
+        position: relative;
     }
     .sec3__bg {
+        width: 75px;
+        height: 470px;
         position: absolute;
-        right: -21%;
+        right: -9rem;
         top: 50%;
         transform: translateY(-50%) scaleX(-1);
     }
     .sec3__txt {
+        margin-right: 3rem;
+
         h2 {
-            font-size: 5rem;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
+            font-size: 3.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
             line-height: 1;
             color: ${({theme}) => theme.primary};
-            margin-bottom: 2.2rem;
+            margin-bottom: 1.87rem;
+            text-align: left;
         }
         p {
             color: ${({theme}) => theme.greysecond};
             font-family: 'Raleway', sans-serif;
-            font-size: 1.5rem;
-            line-height: 1.5;
-            text-align: justify;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 25px;
+            text-align: left;
+            max-width: 343px;
             /* margin-bottom: 2rem; */
         }
         span {
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
+            font-size: 0.72rem;
             color: ${({theme}) => theme.secondary};
             text-transform: uppercase;
             display: block;
-            margin-top: 6.56rem;
-            margin-bottom: 1.25rem;
+            margin-top: 4.37rem;
+            margin-bottom: 14px;
         }
         a {
             background-color: ${({theme}) => theme.primary};
-            width: 230px;
-            height: 73px;
+            width: 126px;
+            height: 38px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.37rem;
+            font-size: 0.75rem;
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
+            text-transform: uppercase;
             color: ${({theme}) => theme.white};
-            border-radius: 20px;
             transition: all 100ms ease-in;
             
             &:hover {
-                background-color: ${({theme}) => darken(0.1, theme.primary)};
+                background-color: ${({theme}) => darken(0.1, theme.grey)};
             }
         }
     }

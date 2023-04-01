@@ -9,33 +9,33 @@ function Footer() {
   return (
     <FooterContainer>
         <div className='footer__top'>
+            <div className='footer__content'>
             <p><strong>Vamos despertar</strong><br/>
             seu potencial?</p>
-            <div className='footer__content'>
                 <Link href="/" className='footer__logo'>
-                    <Image src={LogoFooter} />
+                    <Image src={LogoFooter} fill />
                 </Link>
                 <div className='footer__links'>
                     <nav>
-                        <Link href="/">Nossos estudos</Link>
-                        <Link href="/">Sobre a WUP</Link>
-                        <Link href="/">Sobre a Marta</Link>
+                        <Link href="/#nossos-estudos">Nossos estudos</Link>
+                        <Link href="/#sobre-a-wup">Sobre a WUP</Link>
+                        <Link href="/#sobre-a-marta">Sobre a Marta</Link>
                     </nav>
                     <div className='footer__external__links'>
                         <Link href="/" target="_blank" rel='noreferrer noopener'>
                             Nos chame no whats
                             <FaWhatsapp />
                         </Link>
-                        <Link href="/" target="_blank" rel='noreferrer noopener'>
+                        <Link href="https://www.linkedin.com/" target="_blank" rel='noreferrer noopener'>
                             <FaLinkedinIn />
                         </Link>
-                        <Link href="/" target="_blank" rel='noreferrer noopener'>
+                        <Link href="https://pt-br.facebook.com/" target="_blank" rel='noreferrer noopener'>
                             <FaFacebookF />
                         </Link>
-                        <Link href="/" target="_blank" rel='noreferrer noopener'>
+                        <Link href="https://twitter.com/" target="_blank" rel='noreferrer noopener'>
                             <FaTwitter />
                         </Link>
-                        <Link href="/" target="_blank" rel='noreferrer noopener'>
+                        <Link href="https://instagram.com/" target="_blank" rel='noreferrer noopener'>
                             <FaInstagram />
                         </Link>
                     </div>
@@ -44,8 +44,10 @@ function Footer() {
         </div>
         <div className='footer__bottom'>
             <p>Pensado e desenvolvido com muito carinho</p>
-            <Link href="/" target="_blank" rel='noreferrer noopener'>Surto - Marketing Inteligente</Link>
-            <p>2023</p>
+            <p>
+                <Link href="/" target="_blank" rel='noreferrer noopener'>Surto - Marketing Inteligente </Link>
+                | 2023
+            </p>
         </div>
     </FooterContainer>
   )

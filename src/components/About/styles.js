@@ -2,35 +2,45 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.section`
     position: relative;
+    max-width: 1036px;
+    margin: 0 auto;
+    padding: 0 1rem;
 
     .about__row1 {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        margin-bottom: 6rem;
 
         .about__img {
-            width: 515px;
-            height: 725px;
+            width: 361px;
+            height: 506px;
             position: relative;
-            margin-right: 10.5rem;
+            margin-right: 2rem;
         }
         .about__txt {
+            max-width: 775px;
 
             p {
-                font-family: 'Open Sans', sans-serif;
-                font-size: 3.12rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.18rem;
                 font-weight: 300;
                 color: ${({theme}) => theme.primary};
+                margin-bottom: .7rem;
             }
             h2 {
-                font-size: 5rem;
-                font-weight: 700;
+                font-size: 3.5rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                line-height: 1;
                 color: ${({theme}) => theme.primary};
-                font-family: 'Open Sans', sans-serif;
+                margin-bottom: .5rem;
             }
             span {
-                font-size: 1.87rem;
+                font-size: 1.31rem;
                 color: ${({theme}) => theme.secondary};
-                font-family: 'Open Sans', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
                 margin-bottom: 2.5rem;
                 display: block;
             }
@@ -38,44 +48,56 @@ export const AboutContainer = styled.section`
             ul {
                 li {
                     font-family: 'Raleway', sans-serif;
-                    font-size: 1.31rem;
+                    font-size: 0.9rem;
                     color: ${({theme}) => theme.greysecond};
-                    margin-bottom: 2rem;
+                    margin-bottom: .8rem;
                 }
             }
         }
     }
 
     .about__quote {
-        max-width: 1000px;
+        max-width: 575px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 6rem;
         display: flex;
         align-items: flex-end;
+        position: relative;
 
         span {
-            font-size: 13rem;
+            font-size: 9rem;
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
             color: ${({theme}) => theme.primary};
+            position: absolute;
+
+            &:first-child {
+                left: -24%;
+                top: -90%;
+            }
+        }
+
+        .about__quote__sign2 {
+            right: -24%;
+            top: -23%;
         }
 
         .about__quote__txt {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left: 4rem;
-            top: -55px;
+            /* top: -55px; */
             position: relative;
 
             blockquote {
                 font-family: 'Raleway', sans-serif;
-                font-size: 1.5rem;
-                margin-bottom: 3.43rem;
+                font-size: 1rem;
+                font-weight: 300;
+                margin-bottom: 2.18rem;
                 color: ${({theme}) => theme.greysecond};
             }
             .about__border {
-                width: 650px;
+                width: 445px;
                 height: 3px;
                 display: block;
                 background-color: ${({theme}) => theme.primary};

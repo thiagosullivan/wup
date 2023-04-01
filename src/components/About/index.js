@@ -1,12 +1,21 @@
 import Image from 'next/image';
 import React from 'react';
-import AboutImg from '../../../assets/about-img.png';
+import AboutImg from '../../../assets/about-img-2.png';
 import { AboutContainer } from './styles';
+import NavigationMenu from '../NavigationMenu';
 
 function About() {
   return (
-    <div className='main__div'>
-        <div className='separator'></div>
+    <div className='main__div aboutDiv' id="sobre-a-marta">
+        {/* <div className='separator'></div> */}
+        <NavigationMenu
+            btnOne="Sobre a Marta"
+            btnOneLink="#sobre-a-marta"
+            btnTwo="Nossos estudos"
+            btnTwoLink="#nossos-estudos"
+            btnThree="Sobre a WUP"
+            btnThreeLink="#sobre-a-wup"
+        />
         <AboutContainer>
             <div className='about__row1'>
                 <div className='about__img'>
@@ -29,10 +38,11 @@ function About() {
                 </div>
             </div>
             <div className='about__quote'>
-                <span>“</span>
                 <div className='about__quote__txt'>
+                    <span>“</span>
                     <blockquote>“Usando métodos desenvolvidos ao longo dos 15 anos de atuação dentro de empresas familiares, transformamos empresas e despertamos líderes”.</blockquote>
                     <div className='about__border'></div>
+                    <span className='about__quote__sign2'>“</span>
                 </div>
             </div>
         </AboutContainer>

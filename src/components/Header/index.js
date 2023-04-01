@@ -8,7 +8,7 @@ function Header() {
   return (
     <HeaderContainer>
         <Link href="/">
-            <Image src={WupLogo} />
+            <Image src={WupLogo} fill />
         </Link>
     </HeaderContainer>
   )
